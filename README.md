@@ -62,29 +62,23 @@ python ga_knapsack.py
 
 **Copy the printed packing list here:**
 ```
-
-  Best Packing List
---------------------------------------    
-  + Water bottle
-  + First aid kit
-  + Sleeping bag
-  + Torch
-  + Energy bars (x6)
-  + Rain jacket
-  + Map & compass
-  + Cooking stove
-  + Rope (10 m)
-  + Sunscreen
-  + Power bank
---------------------------------------    
-  Weight : 14.4 / 15.0 kg
-  Value  : 77
-  Valid  : Yes
-
-  Generations run : 50
-  Value at gen 1  : 60
-  Final best value: 77
-  Saved -> plots/experiment_1.png
+Best Packing List
+--------------------------------------
++ Water bottle
++ First aid kit
++ Sleeping bag
++ Torch
++ Energy bars (x6)
++ Rain jacket
++ Map & compass
++ Cooking stove
++ Rope (10 m)
++ Sunscreen
++ Power bank
+--------------------------------------
+Weight : 14.4 / 15.0 kg
+Value  : 77
+Valid  : Yes
 ```
 
 **Look at `plots/experiment_1.png` and describe what you see (2–3 sentences).**  
@@ -111,12 +105,12 @@ Save plots as `experiment_2a.png`, `experiment_2b.png`, `experiment_2c.png`.
 **Compare the three plots. What happens when mutation is too low? Too high? (3–4 sentences)**  
 *Hint: Too low = no diversity, may get stuck. Too high = random search. What is the sweet spot?*
 ```
-When the mutation rate is too low (0.01), the algorithm explores very little and quickly gets stuck in a suboptimal solution. When the mutation rate is moderate (0.05), it provides a good balance between exploration and stability. When the mutation rate is high (0.30), the search becomes more random but can sometimes find better solutions. Thus, a balanced mutation rate is generally preferred, though higher mutation may occasionally give better results.
+When the mutation rate is too low (0.01), the algorithm explores very little and gets stuck early. A moderate mutation rate (0.05) provides a good balance between exploration and stability. A high mutation rate (0.30) increases randomness but can sometimes discover better solutions. Thus, a balanced mutation rate is generally preferred.
 ```
 
 **Which mutation_rate gave the best result? Why do you think that is?**
 ```
-The mutation rate of 0.30 gave the best result in this case with a value of 78. This is because higher mutation increases diversity and helps explore more possible solutions. However, it may not always be stable compared to moderate mutation rates.
+The mutation rate of 0.30 gave the best result with the highest value of 78. This is because higher mutation increases diversity and helps explore more solutions. However, it may not always be stable compared to moderate mutation rates.
 ```
 
 ---
@@ -131,7 +125,7 @@ The mutation rate of 0.30 gave the best result in this case with a value of 78. 
 | 2 — Mutation rate | mutation_rate = 0.30 | 78 | Higher mutation can find better solutions but may be unstable |
 **In your own words — what is the most important thing you learned about Genetic Algorithms from these experiments? (3–5 sentences)**
 ```
-I learned that Genetic Algorithms work by balancing exploration and exploitation to find optimal solutions. Mutation rate plays a crucial role in maintaining diversity in the population. Too little mutation leads to stagnation, while too much makes the search random. A balanced mutation rate usually provides stable results, but higher mutation can sometimes discover better solutions. Overall, Genetic Algorithms are powerful optimization techniques inspired by natural evolution.
+Genetic Algorithms balance exploration and exploitation to find optimal solutions. Mutation rate controls diversity in the population. Too little mutation leads to stagnation, while too much makes the search random. A balanced mutation rate provides stable results. Overall, Genetic Algorithms are effective optimization techniques inspired by natural evolution.
 ```
 
 ---
